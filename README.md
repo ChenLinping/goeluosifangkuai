@@ -111,6 +111,25 @@ make check
 make dist
 ```
 
+### Git同步
+
+项目提供了多个Git同步脚本，方便将代码同步到远程仓库：
+
+```bash
+# 基本同步（Linux/macOS）
+./sync.sh "提交信息"
+
+# Windows同步
+sync.bat
+
+# 高级同步脚本（支持更多选项）
+./git-sync.sh --help          # 查看帮助
+./git-sync.sh "提交信息"      # 基本同步
+./git-sync.sh -p "更新"       # 先拉取再推送
+./git-sync.sh -f              # 强制推送
+./git-sync.sh -s              # 只查看状态
+```
+
 ## 📝 License
 
 MIT License
